@@ -1,0 +1,31 @@
+from abc import ABC, abstractmethod
+
+
+class Pagamento(ABC):
+    @abstractmethod
+    def pagar(self, valor):
+        pass
+
+class PagamentoPromessa(Pagamento):
+    def pagar(self, valor):
+        print(f"Pagamento de R$ {valor} via Promessa")
+        
+class PagamentoCartao(Pagamento):
+    def pagar(self,valor):
+        print(f"Pagamento de R$ {valor} com Cartão")
+
+class PagamentoPix(Pagamento):
+    def pagar(self,valor):
+        print(f"Pagamento de R$ {valor} via PIX")
+
+
+def realizarPagamento(meio, valor):
+    meio.pagar(valor)
+
+promessa = PagamentoPromessa()
+cartao = PagamentoCartao()
+pix = PagamentoPix()
+
+realizarPagamento(promessa, 150)
+realizarPagamento(cartao, 150)
+realizarPagamento(pix, 150)
