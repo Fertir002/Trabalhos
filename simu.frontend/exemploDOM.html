@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SIMULADO P1 -> DOM -> Manipulação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="titulo">Olá Mundo!</h1>
+    <p id="meuParagrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum!</p>
+
+<hr id="meuHr">
+
+    <!-- Formulário para Mudança de Título -->
+    <input type="text" placeholder="Digite o novo Titulo" id="meuInputTitulo"> 
+    <button type="submit" id="btnEnviarTitulo">Mudar Titulo</button>
+
+    <!-- Formulário para Mudança de Parágrafo -->
+    <textarea id="meuInputParagrafo" placeholder="Digine o novo Paragrafo" rows="8" cols="60"></textarea>
+    <button type="submit" id="btnEnviarParagrafo">Mudar Paragrafo</button>
+    
+<hr id="meuHr">
+
+    <h2>ITEMS:</h2>
+    <ul class="lista">
+        <!-- Aqui vai Entrar as listas <li> -->
+    </ul>
+    <!-- Formulário para Adicionar o Item a Lista -->
+    <form id="meuForm">
+        <br>
+        <input type="text" placeholder="Novo Item da Lista.." id="meuInput">
+        <button type="submit" id="btnEnviar">Adicionar a Lista</button>
+    </form>
+
+<hr id="meuHr">
+
+    <!-- Contador de Itens -->
+    <button id="btnContador">Clique Para Contar os Items</button>
+    <div id="contadorResultado">
+        <div id="resultado2"></div>
+    </div>
+
+<hr id="meuHr">
+
+    <!-- Contador de Cliques -->
+    <br>
+    <b>Contador de Cliques</b>
+    <button id="btn">Clique Aqui</button>
+    <div id="resultado"></div>
+    <br>
+
+<hr id="meuHr">
+
+    <!-- NÃO ESQUEÇA DE MUDAR O NOME DO ARQUIVO JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
